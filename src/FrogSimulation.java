@@ -11,7 +11,7 @@ public class FrogSimulation
 
     private int hopDistance()
     {
-        
+        return (int)(Math.random()*(20 + 1 - (-5)) + (-5));
     }
 
     public boolean simulate()
