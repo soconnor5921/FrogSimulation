@@ -1,3 +1,4 @@
+//Sullivan O'Connor pd2-3
 public class FrogSimulation
 {
     private int goalDistance;

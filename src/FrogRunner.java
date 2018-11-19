@@ -1,3 +1,4 @@
+//Sullivan O'Connor pd2-3
 public class FrogRunner
 {
     public static void main(String[] args)
