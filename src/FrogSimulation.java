@@ -17,14 +17,21 @@ public class FrogSimulation
     public boolean simulate()
     {
         int totalDistance = 0;
+        String output = "Goal: " + goalDistance + " Hops: ";
         for(int i = 0; i < maxHops; i++)
         {
-            totalDistance += hopDistance();
+            int hop = hopDistance();
+            output += hop + ", ";
+            totalDistance += hop;
             if(totalDistance >= goalDistance)
             {
+                output += "Success Final Distance: " + totalDistance + "\n";
+                System.out.println(output);
                 return true;
             }
         }
+        output += "Failed Final Distance: " + totalDistance + "\n";
+        System.out.println(output);
         return false;
     }
 
